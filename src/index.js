@@ -8,7 +8,7 @@ puppeteer.launch().then(async browser => {
   // check if the options page work as intended
   const webPage = await browser.newPage()
   await webPage.goto(`https://youtube.com`)
-  // check the dom to see if the extension content script modified the dom like it we want to
+  // check the dom to see if the extension content script modified the dom like we want to
 
 
   // allow us to use all that fancy puppeteer magic like frame.$(selector) and all that stuff on the extensions pages (background page/options page/ect...)
