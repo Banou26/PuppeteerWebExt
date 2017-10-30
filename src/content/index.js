@@ -1,0 +1,1 @@
+// run script that uses the webextension api while being capable of accessing the dom like a basic extension content-script

@@ -1,0 +1,1 @@
+// run background scripts using the webextension api https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API

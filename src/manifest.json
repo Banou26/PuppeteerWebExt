@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "extension",
+  "short_name": "ext",
+  "version": "0.1",
+  "icons": {
+    "64": "./logo-64.png"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "options_ui": {
+    "page": "./index.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "./content/index.js"
+        ],
+      "matches": ["*://*/*"],
+      "all_frames": true
+    }
+  ]
+  "permissions": [
+    "<all_urls>",
+    "downloads",
+    "downloads.open",
+    "alarms",
+    "cookies",
+    "identity",
+    "idle",
+    "notifications",
+    "sessions",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ]
+}
